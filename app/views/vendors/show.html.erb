@@ -10,5 +10,18 @@
   <%= @vendor.description %>
 </p>
 
+<p>
+  <strong>Products:</strong>
+  <% @vendor.products.each do |product| %>
+    <% @vendor.product_vendors.each do |product_vendor| %>
+    <tr>
+      <td><%= product.name %></td>
+      <td><%= product_vendor.price %></td>
+      <td>|</td>
+  <% end %>
+  <% end %>
+  </tr>
+</p>
+
 <%= link_to 'Edit', edit_vendor_path(@vendor) %> |
 <%= link_to 'Back', vendors_path %>
