@@ -10,6 +10,11 @@
   </head>
 
   <body>
+  <div id="header">
+    <%= link_to "Products", products_path %>
+    <%= link_to "Vendors", vendors_path%>
+    <%= link_to "Product Vendors", product_vendors_path%>
+  </div>
     <%= yield %>
   </body>
 </html>
