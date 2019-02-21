@@ -12,13 +12,11 @@
 
 <p>
   <strong>Vendors:</strong>
-  <% @product.vendors.each do |vendor| %>
     <% @product.product_vendors.each do |product_vendor| %>
     <tr>
-      <td><%= vendor.name %></td>
+      <td><%= product_vendor.vendor.name %></td>
       <td><%= product_vendor.price %></td>
       <td>|</td>
-  <% end %>
   <% end %>
   </tr>
 </p>
