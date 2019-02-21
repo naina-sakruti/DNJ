@@ -15,8 +15,8 @@
   <tbody>
     <% @product_vendors.each do |product_vendor| %>
       <tr>
-        <td><%= product_vendor.product %></td>
-        <td><%= product_vendor.vendor %></td>
+        <td><%= product_vendor.product.name %></td>
+        <td><%= product_vendor.vendor.name %></td>
         <td><%= product_vendor.price %></td>
         <td><%= link_to 'Show', product_vendor %></td>
         <td><%= link_to 'Edit', edit_product_vendor_path(product_vendor) %></td>
