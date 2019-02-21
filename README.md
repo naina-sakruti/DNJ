@@ -5,6 +5,9 @@ application up and running.
 
 Things you may want to cover:
 
+- covered part 1 and 2 of activity
+- working on part 3 of activity 
+
 * Ruby version
 
 * System dependencies
